@@ -5,36 +5,51 @@
 }
 
 body{
-  background-color: #21232a;
+  background: linear-gradient(180deg, #21232a, #192d53f5); 
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   padding: 60px;
 }
 
 input{
-  color: #293035;
-  font-size: 1.1rem;
-  margin: 20px 0px;
-  padding: 7px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #efefefc2;
+  border-radius: 5px;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 20px 0px 10px;
+  letter-spacing: 1px;
+  padding: 0.6em 1.3em;
+  transition: all 200ms ease 0s;
   width: 100%;
+}
+
+input:focus{
+  background-color: rgba(100, 149, 237, 0.3);
+  box-shadow: rgb(63 133 213 / 30%) -5px -5px 25px, rgb(151 0 255 / 20%) -5px 5px 30px, rgb(63 213 171 / 40%) 7px -2px 30px;
+  outline: none;
 }
 
 .card{
   align-content: center;
   background: rgb(15, 22, 36);
-  border: 2px solid #efefefc2;
+  box-shadow: 0 0.1rem 0.3rem #efefefc2;
   border-radius: 5px;
   margin-bottom: 20px;
   margin-right: 5px;
   width: 100%;
   overflow: hidden;
+  transition: all 500ms ease 0s;
 }
 
 .card p {
+  color: #fff;
   font-weight: bold;
   padding: 8px;
   text-align: center;
   text-transform: capitalize;
+  transition: all 500ms ease 0s;
 }
 
 .card img{
@@ -67,7 +82,7 @@ h2{
 }
 
 .content-wrapper{
-  padding: 25px 0px;
+  padding: 18px 0px;
 }
 
 .loading{
@@ -80,25 +95,28 @@ h2{
   font-weight: bold;
   text-align: center;
   padding-top: 9px;
+  text-transform: lowercase
 }
 
 .link{
   color: #6495ed;
   text-decoration: none;
-}
-
-.link:hover{
-  color: #325ba7;
+  transition: all 500ms ease 0s;
 }
 
 .icon-github{
   color: #fff;
   font-size: 1.1rem;
-  padding-left: 5px;
+  padding: 0px 5px;
+  transition: all 500ms ease 0s;
 }
 
-.icon-github:hover{
-  color: #325ba7;
+.main-hr{
+  margin-top: 20px;
+}
+
+.link-img{
+  text-decoration: none;
 }
 
 /* Media queries 576px, 768px, 992px y 1200px */
@@ -109,6 +127,9 @@ h2{
   }
   .footer{
     text-align: end;
+  }
+  .main-hr{
+    display: none;
   }
 }
 
@@ -142,5 +163,15 @@ h2{
   }
   .card{
     width: 325px;
+  }
+  .card:hover {
+    box-shadow: 0 0.1rem 0.2rem #325ba7;
+  }
+  .card:hover p{
+    color: #a3b8df;
+  }
+  .link:hover,
+  .icon-github:hover{
+    color: #325ba7;
   }
 }

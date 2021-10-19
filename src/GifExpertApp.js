@@ -13,7 +13,8 @@ const GifExpertApp = () => {
             <h1>GifExpertApp</h1>
             <h2>Search Your Favourites GIFs</h2>
             <AddCategory setCategories={ setCategories }/>
-            <hr/>
+
+            <hr className="main-hr"/>
 
             <ul>
              {
@@ -25,9 +26,8 @@ const GifExpertApp = () => {
                  )
              }
             </ul>
-
+            
            <Footer/>
-
         </>
     )
 }
