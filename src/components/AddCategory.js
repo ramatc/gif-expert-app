@@ -34,4 +34,4 @@ AddCategory.propTypes = {
     setCategories: PropTypes.func.isRequired
 }
 
-export default AddCategory
+export default AddCategory;
