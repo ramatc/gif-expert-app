@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(["Rick and Morty", "The Mandalorian"]);
+    const [categories, setCategories] = useState(["Rick and Morty"]);
     
     return (
         <>
