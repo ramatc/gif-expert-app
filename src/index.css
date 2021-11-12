@@ -27,7 +27,6 @@ body {
 input {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid var(--main-border-color);
-    border-right: 0px;
     border-radius: 5px 0px 0px 5px;
     color: inherit;
     font-size: 1rem;
@@ -39,14 +38,14 @@ input {
     width: 100%;
 }
 
-/* input:focus {
+input:focus {
     background-color: rgba(100, 149, 237, 0.3);
     box-shadow: rgb(63 133 213 / 30%) -5px -5px 25px, rgb(151 0 255 / 20%) -5px 5px 30px, rgb(63 213 171 / 40%) 7px -2px 30px;
     outline: none;
-} */
+}
 
 .btnSearch{
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #0019ff1a;
     border: 2px solid var(--main-border-color);
     border-left: 0px;
     border-radius: 0px 5px 5px 0px;
@@ -97,7 +96,7 @@ h1 {
 }
 
 h2 {
-    color: var(--main-text-color);;
+    color: var(--main-text-color);
     font-size: 1.3rem;
     text-align: center;
     padding: 10px 0px;
@@ -105,13 +104,12 @@ h2 {
 
 .gif-title {
     font-size: 1.5rem;
-    padding: 9px 0px;
     text-align: center;
     padding: 15px 0px;
 }
 
 .loading {
-    color: var(--main-text-color);;
+    color: var(--main-text-color);
     font-size: 1.6rem;
     text-align: center;
 }
@@ -121,11 +119,11 @@ h2 {
     font-weight: bold;
     text-align: center;
     padding-top: 9px;
-    text-transform: lowercase
+    text-transform: lowercase;
 }
 
 .link {
-    color: var(--main-text-color);;
+    color: var(--main-text-color);
     text-decoration: none;
     transition: all 500ms ease 0s;
 }
@@ -143,6 +141,28 @@ h2 {
 
 .link-img {
     text-decoration: none;
+}
+
+.container_not_found{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.not_found{
+    text-align: center;
+    font-size: 2rem;    
+    width: 100%;
+}
+
+.img_results{
+    width: 250px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 /* Media queries 576px, 768px, 992px y 1200px */
@@ -186,6 +206,15 @@ h2 {
     .card img {     
         height: 300px;
     }
+    .container_not_found{
+        padding: 35px 0px;
+    }
+    .not_found{
+        font-size: 2.3rem;
+    }
+    .img_results{
+        width: 260px;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -224,5 +253,14 @@ h2 {
     }
     .card img {     
         width: 300px;  
+    }
+    .not_found{
+        font-size: 2.6rem;
+    }
+    .img_results{
+        width: 280px;
+    }
+    .btnSearch:hover{
+        background-color: #001aff49;
     }
 }
