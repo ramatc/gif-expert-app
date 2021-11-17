@@ -61,7 +61,7 @@ input:focus {
 .card {
     align-content: center;
     background: rgb(15, 22, 36);
-    box-shadow: 0 0.1rem 0.3rem var(--main-border-color);
+    box-shadow: 0 0.1rem 0.3rem #000000;
     border-radius: 5px;
     margin-bottom: 20px;
     margin-right: 5px;
@@ -232,7 +232,7 @@ a{
         width: 300px;
     }
     .card:hover {
-        box-shadow: 0 0.1rem 0.3rem #325ba7;
+        box-shadow: 0 0.1rem 0.1rem #325ba7;
     }
     .card:hover p {
         color: #a3b8df;
