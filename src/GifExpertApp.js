@@ -10,7 +10,7 @@ const GifExpertApp = () => {
     
     return (
         <>
-            <h1><a href="/">GifExpertApp</a></h1>
+            <h1><a href="https://ramatc.github.io/gif-expert-app/">GifExpertApp</a></h1>
             <h2>Search Your Favourites GIFs</h2>
             <AddCategory setCategories={ setCategories }/>
 

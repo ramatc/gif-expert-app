@@ -6,3 +6,5 @@ The information is obtained through a call to the API of [GIPHY Developers](http
 
 Visit it here: https://ramatc.github.io/gif-expert-app/
 
+![GifExpertApp](https://user-images.githubusercontent.com/75765676/142271364-0ca10328-9a0f-47f6-b121-38c17bbae0b6.jpg)
+

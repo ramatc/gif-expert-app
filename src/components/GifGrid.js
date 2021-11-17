@@ -1,6 +1,7 @@
 import React from 'react'
 import useFetchGifs from '../hooks/useFetchGifs';
 import GifGridItem from './GifGridItem';
+import not_results from '../assets/images/crying-cowbow-emoji.gif';
 
 const GifGrid = ({ category }) => {
     
@@ -16,7 +17,7 @@ const GifGrid = ({ category }) => {
                 images.length === 0 && 
                 <div className="container_not_found">
                     <h3 className="not_found">No GIFs found for your search</h3> 
-                    <img src="/crying-cowbow-emoji.gif" alt="No GIFs found for your search" className="img_results"></img>
+                    <img src={not_results} alt="No GIFs found for your search" className="img_results"></img>
                 </div>
             }
 
