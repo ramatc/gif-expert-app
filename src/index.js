@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    < GifExpertApp/>
+    <GifExpertApp/>
   </React.StrictMode>,
   document.getElementById('root')
 );

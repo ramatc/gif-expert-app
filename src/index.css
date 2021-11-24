@@ -10,7 +10,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #21232a, #192d53f5);
+    background: linear-gradient(180deg, #21232afb, #192d53f5, #192d53ea);
     color: #fff;
     font-family: "Montserrat", Arial, sans-serif;
     padding: 60px;
@@ -28,7 +28,7 @@ input {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid var(--main-border-color);
     border-radius: 5px 0px 0px 5px;
-    color: inherit;
+    color: #fff;
     font-size: 1rem;
     font-weight: 600;
     margin: 20px 0px 10px;
@@ -39,8 +39,8 @@ input {
 }
 
 input:focus {
-    background-color: rgba(100, 149, 237, 0.3);
-    box-shadow: rgb(63 133 213 / 30%) -5px -5px 25px, rgb(151 0 255 / 20%) -5px 5px 30px, rgb(63 213 171 / 40%) 7px -2px 30px;
+    background-color: rgba(100, 150, 235, 0.3);
+    box-shadow: -5px -5px 25px rgba(30, 90, 150, 0.3), -5px 5px 30px rgba(10, 50, 250, 0.2), 7px -2px 30px rgba(50, 135, 190, 0.3);
     outline: none;
 }
 
@@ -231,11 +231,8 @@ a{
     .card {
         width: 300px;
     }
-    .card:hover {
-        box-shadow: 0 0.1rem 0.1rem #325ba7;
-    }
     .card:hover p {
-        color: #a3b8df;
+        color: rgb(109, 134, 209);
     }
     .link:hover,
     .icon-github:hover {
