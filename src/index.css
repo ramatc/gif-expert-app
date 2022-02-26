@@ -68,6 +68,7 @@ input:focus {
     width: 100%;
     overflow: hidden;
     transition: all 500ms ease 0s;
+    position: relative;
 }
 
 .card p {
@@ -140,7 +141,17 @@ h2 {
 }
 
 .link-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.450);
+    font-size: 2rem;
+    opacity: 0;
     text-decoration: none;
+    transition: opacity .5s;
 }
 
 .container_not_found{
@@ -215,11 +226,20 @@ a{
     .img_results{
         width: 260px;
     }
+    .link-img:hover{
+        opacity: 1;
+    }
 }
 
 @media(min-width: 1200px) {
     h1 {
         font-size: 2.8rem;
+    }
+    h1 a {
+        transition: all 500ms ease 0s;
+    }
+    h1 a:hover {
+        color: rgba(255, 255, 255, 0.705);
     }
     h2 {
         font-size: 1.5rem;
@@ -230,9 +250,6 @@ a{
     }
     .card {
         width: 300px;
-    }
-    .card:hover p {
-        color: rgb(109, 134, 209);
     }
     .link:hover,
     .icon-github:hover {
